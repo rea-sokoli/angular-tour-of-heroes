@@ -1,0 +1,10 @@
+<br>
+<div *ngIf="messageService.messages.length">
+
+    <h2 style="text-align: center;">Messages</h2>
+    <button class="clear"
+            (click)="messageService.clear()">Clear Messages</button>
+            <br>
+    <div *ngFor='let message of messageService.messages' style="text-align: center;"> {{message}} </div>
+  
+  </div>
